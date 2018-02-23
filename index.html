@@ -13,14 +13,17 @@
 <a-sky id="sky" src="./city.jpg">
 <a-animation
 	attribute="rotation"
-	dur="20000"
+	dur="60000"
 	to="0 360 0"
 	repeat="indefinite"
 	direction="alternate"
 ></a-animation>
 </a-sky>
 <a-box id="box" color="#d4e676" width="2" height="3" depth="1" position="3 2 -5" rotation="0 20 20"></a-box>
-
+<a-camera>
+  <a-cursor color="#fff" fuse="true">
+  </a-cursor>
+</a-camera>
 
 <!--
 <a-animation attribute="scale"  direction="alternate" dur="5000" easing="linear" from="1 1 -1" to="10 10 -10" repeat="indefinite"></a-animation>
