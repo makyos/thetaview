@@ -11,6 +11,7 @@
 
 <!-- assets つかうと動かない codepen だから？ -->
 <a-sky id="sky" src="./city.jpg">
+<!--
 <a-animation
 	attribute="rotation"
 	dur="60000"
@@ -18,11 +19,14 @@
 	repeat="indefinite"
 	direction="alternate"
 ></a-animation>
+-->
 </a-sky>
-<a-box id="box" color="#d4e676" width="2" height="3" depth="1" position="3 2 -5" rotation="0 20 20"></a-box>
+
+<a-box id="box1" color="#d4e676" width="1" height="1" depth="1" position=" 2 -10 -20" rotation="20 20 20"></a-box>
+<a-box id="box2" color="#123456" width="1" height="1" depth="1" position="-2 -10 -20" rotation="20 20 20"></a-box>
+
 <a-camera>
-  <a-cursor color="#fff" fuse="true">
-  </a-cursor>
+  <a-cursor color="#fff" fuse="true"></a-cursor>
 </a-camera>
 
 <!--

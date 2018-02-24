@@ -1,7 +1,4 @@
 #!/bin/sh
 
-browser-sync start \
-	--server \
-	--browser /opt/firefox/firefox \
-	--files * \
+browser-sync start --config bs-config.js --files "**/*"
 

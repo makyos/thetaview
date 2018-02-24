@@ -1,11 +1,9 @@
-var skyEl = document.getElementById("box");
-
-skyEl.addEventListener('click', function() {
-	var animation = document.createElement('a-animation');
-	animation.setAttribute('attribute', 'scale');
-	animation.setAttribute('to', '2 2 2');
-	animation.setAttribute('dur', '500');
-	this.appendChild(animation);
-	console.log('evt');
+var box1EL = document.getElementById("box1");
+box1EL.addEventListener('click', function() {
+	console.log('click! box1');
 });
 
+var skyEL = document.getElementById("sky");
+skyEL.addEventListener('click', function () {
+	console.log('click! sky');
+});
