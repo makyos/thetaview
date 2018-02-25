@@ -2,15 +2,18 @@
 <html lang="ja">
 
 <head>
-<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
 </head>
 
 <body>
 
 <a-scene>
 
-<!-- assets つかうと動かない codepen だから？ -->
-<a-sky id="sky" src="./city.jpg">
+<a-assets>
+	<img id="skyimage1" src="./city.jpg">
+</a-assets>
+
+<a-sky id="sky" src="#skyimage1">
 <!--
 <a-animation
 	attribute="rotation"
@@ -22,8 +25,8 @@
 -->
 </a-sky>
 
-<a-box id="box1" color="#d4e676" width="1" height="1" depth="1" position=" 2 -10 -20" rotation="20 20 20"></a-box>
-<a-box id="box2" color="#123456" width="1" height="1" depth="1" position="-2 -10 -20" rotation="20 20 20"></a-box>
+<a-box id="box1" color="#d4e676" width="1" height="1" depth="1" position=" 10 -5 -20" rotation="0 0 0"></a-box>
+<a-box id="box2" color="#123456" width="1" height="1" depth="1" position="-10 -5 -20" rotation="0 0 0"></a-box>
 
 <a-camera>
   <a-cursor color="#fff" fuse="true"></a-cursor>
